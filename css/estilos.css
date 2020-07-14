@@ -62,6 +62,12 @@ section{
     color: #fff;
     text-decoration: none;
     border: 2px solid #fff;
+    transition: 700ms;
+}
+.btn:hover{
+    color: #333;
+    background: #fff;
+    transition: 700ms;
 }
 .fitBg{
     position: absolute;
