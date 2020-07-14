@@ -73,6 +73,7 @@ section{
     text-decoration: none;
     border: 2px solid #fff;
     transition: 700ms;
+    z-index: 2;
 }
 .btn:hover{
     color: #333;
@@ -97,7 +98,6 @@ section{
     align-items: center;
 }
 .about .contentBx{
-    max-width: 50%;
     width: 50%;
     text-align: end;
     padding-right: 40px;
@@ -145,4 +145,145 @@ section{
     width: 100%;
     height: 400px;
     background: linear-gradient(to top, #111, transparent);
+}
+.destination{
+    text-align: center;
+}
+.destination .conetnt{
+    text-align: center;
+}
+.destination .destinationList{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destination .destinationList .box{
+    position: relative;
+    min-width: 350px;
+    height: 480px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+}
+.destination .destinationList:hover .box{
+    opacity: 0.2;
+}
+.destination .destinationList .box:hover{
+    opacity: 1;
+}
+.destination .destinationList .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.destination .destinationList .box .content{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination .destinationList .box .content h2{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.destination .destinationList .box .content h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.banner3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.banner3:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, #111, transparent);
+}
+.banner3:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer .contentImg{
+    margin: 40px 0;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .contentImg img{
+    filter: invert(1);
+    width: 30px;
+}
+.footer .contentImg img:hover{
+    cursor: pointer;
+} 
+.footer p{
+    font-weight: 300;
+    text-align: center;
+}
+.footer p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+@media (max-width:770px){
+    section{
+        padding: 40px;
+    } 
+    .banner .content h2{
+        font-size: 2.5em;
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx{
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .about .imgBx {
+        margin-top: 20px;
+        min-width: 100%;
+        width: 100%;
+        min-height: 250px;
+    }
+    .destination .destinationList .box {
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+    }
+    .destination .destinationList .box .imgBx {
+        height: 320px;
+    }
 }
