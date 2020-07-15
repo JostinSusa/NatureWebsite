@@ -30,6 +30,23 @@ section{
     text-decoration: none;
     font-size: 1.2em;
 }
+.header .menu{
+    display: none;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header .menu a{
+    padding: 5px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+.header .menu a:hover{
+    border-bottom: 1px solid #fff;
+    transition: all 300ms;
+}
 .header .toggle img{
     max-width: 40px;
     cursor: pointer;
