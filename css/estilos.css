@@ -47,6 +47,16 @@ section{
     border-bottom: 1px solid #fff;
     transition: all 300ms;
 }
+@media screen and (max-width: 530px){
+    .header .menu{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .header .menu li {
+    margin: 5px auto;
+    }
+
+}
 .header .toggle img{
     max-width: 40px;
     cursor: pointer;
@@ -58,7 +68,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center ;
-}
+}   
 .banner:before{
     content: '';
     position: absolute;
